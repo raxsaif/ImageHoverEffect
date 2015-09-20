@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font: 300 100% 'Helvetica Neue', Helvetica, Arial;
+		}
+
+		.container {
+		  width: 50%;
+		  margin: 0 auto;
+		}
+
+		ul li {
+		  display: inline;
+		  text-align: center;
+		}
+
+		a {
+		  display: inline-block;
+		  width: 20%;
+		  padding: .75rem 0;
+		  margin: 0;
+		  text-decoration: none;
+		  color: #333;
+		  
+		}
+
+		.two:hover ~ hr {
+		  margin-left: 20%;
+		  
+		}
+
+		.three:hover ~ hr {
+		  margin-left: 40%;
+		}
+
+		.four:hover ~ hr {
+		  margin-left: 60%;
+		}
+
+		hr {
+		  height: .25rem;
+		  width: 20%;
+		  margin: 0;
+		  background: tomato;
+		  border: none;
+		  transition: .3s ease-in-out;
+		}
+		
+		
+		.hr1{
+		background:#ddd;
+		width:100%;
+		}
+	
+		/* button_under_line_hover*/
+			
+
+		.sliding-u-t-b > a {
+		  text-decoration: none;
+		  display: inline-block;
+		  border-bottom: 0px solid transparent;
+		  width: 100px;
+		  transition: 0.5s ease;
+		  height: 50px;
+		  margin: 50px 0;
+		  text-align: center;
+		  border-radius: 4px;
+		}
+		.sliding-u-t-b >a:hover {
+			border-bottom: 4px solid blue;
+			padding-bottom:10px;
+		
+		}
+				
+		/* top_to_button_under_line_hover_using_before */
+		
+		.sliding-u-t-b1 {
+		  display: inline-block;
+		  margin: 30px 0;
+		  padding: 0;
+		  height: 60px;
+		}
+		.sliding-u-t-b1:after {
+		content: '';
+		display: block;
+		height: 0;
+		width: 100%;
+		background: transparent;
+		transition: height .5s ease, background-color .5s ease;
+		}
+		.sliding-u-t-b1:hover:after {
+		height: 3px;
+		background: blue;
+		padding:0;
+		}
+		
+		
+		/* button_to_top_under_line_hover_using_before */
+		
+		.sliding-u-t-b2{
+			display: inline-block;
+			position: relative;
+			margin:30px 0;
+		}
+		.sliding-u-t-b2 > a:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 0px;
+			width: 100%;
+			background: transparent;
+			-webkit-transition: all ease 0.5s;
+			-moz-transition: all ease 0.5s;
+			transition: all ease 0.5s;
+		}
+		.sliding-u-t-b2>a:hover:after {
+			height: 3px;
+			background: blue;
+		}
+		
+		
+		/* left_to_right_bottom_under_line_hover */
+		
+		.sliding-u-l-r {
+			text-decoration: none;
+			display: inline-block;
+			border-bottom: 3px solid transparent;    
+			width: 0px;
+			transition: 0.5s ease;
+			white-space: nowrap;
+			height: 40px;
+			margin:30px 0;
+		}
+		.sliding-u-l-r:hover {
+			border-bottom: 3px solid blue;
+			width: 100px;
+			padding-bottom:13px;
+		}
+		
+		/* left_to_right_bottom_under_line_hover_using_before */
+		
+		.sliding-u-l-r2 {
+		display: inline-block;
+		margin:30px 0;
+		}
+		.sliding-u-l-r2:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 0;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+		
+		}
+		.sliding-u-l-r2:hover:after {
+		width: 100px;
+		background: blue;
+		}
+		
+		
+		/* right_to_left_bottom_under_line_hover_using_before */
+		
+		.sliding-u-r-l3 {
+			display: inline-block;
+			position: relative;
+			padding-bottom: 3px;
+			margin:30px 0;
+		}
+		 
+		.sliding-u-r-l3:after {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 3px;
+			width: 0;
+			background: transparent;
+			transition: width .5s ease, background-color .5s ease;
+		}
+		 
+		.sliding-u-r-l3:hover:after {
+			width: 100%;
+			background: blue;
+		}
+		
+		
+		/* Underline_Middle_Out_bottom_under_line_hover_using_before */
+		
+		.sliding-middle-out {
+			display: inline-block;
+			position: relative;
+			padding-bottom: 3px;
+			margin:30px 40px;
+		}
+		.sliding-middle-out:after {
+			content: '';
+			display: block;
+			margin: auto;
+			height: 3px;
+			width: 0px;
+			background: transparent;
+			transition: width .5s ease, background-color .5s ease;
+		}
+		.sliding-middle-out:hover:after {
+			width: 100%;
+			background: blue;
+		}
+		
+		
+		
+    </style>
+</head>
+<body>
+
+	<div class="container">
+	
+		<div class="menu">
+		  <ul>
+			 <li class="one"><a href="#">Uno</a></li>
+			 <li class="two"><a href="#">Dos</a></li>
+			 <li class="three"><a href="#">Tres</a></li>
+			 <li class="four"><a href="#">Quatro</a></li>
+			<hr/>
+		  </ul>
+	  </div>
+	  
+	
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+		
+		
+		<div class="sliding-u-t-b"><a href="#">button</a></div>
+	
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+	
+		<div class="sliding-u-t-b1"><a href="#">button</a></div>
+		
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+		
+		
+		<div class="sliding-u-t-b2"><a href="#">button</a></div>
+		
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+		
+		<div class="sliding-u-l-r"><a href="#">button</a></div>
+		
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+		
+		<div class="sliding-u-l-r2"><a href="#">button</a></div>
+		
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+		
+		<div class="sliding-u-r-l3"><a href="#">button</a></div>
+		
+		
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+		
+		<div class="sliding-middle-out"><a href="#">button</a></div>
+	
+		
+		<hr class="hr1"/><br>
+		<hr class="hr1"/>
+		
+
+	</div>
+	
+
+	
+	
+
+</body>
+</html>

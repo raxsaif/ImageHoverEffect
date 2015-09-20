@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document-2</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    
+        
+   *{margin: 0;padding: 0;}       
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+      
+ 
+body {
+ background: #E5683B;
+}
+ 
+/*TILT*/
+        
+ .tilt{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+    
+    
+  border: 10px solid #fff;  
+  height: 300px;
+  width: 430px;
+  margin: 100px 200px;
+  overflow: hidden;
+   
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+    
+    
+}        
+ 
+
+        
+ .tilt:hover  {
+      -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+ 
+}     
+    
+        
+      
+    
+
+ /*SIDEPAN*/
+.tilt img {
+  margin-left: 0px;
+  -webkit-transition: margin 3s ease;
+     -moz-transition: margin 3s ease;
+       -o-transition: margin 3s ease;
+      -ms-transition: margin 3s ease;
+          transition: margin 3s ease;
+}
+ 
+.tilt img:hover {
+  margin-left: -200px;
+}
+   
+        
+
+        
+     
+    </style>
+</head>
+<body>
+<div class="tilt ">
+  <img src="jon_cay.jpg" alt="car">
+</div>
+</body>
+</html>

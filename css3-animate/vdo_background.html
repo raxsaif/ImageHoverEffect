@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font: 300 100% 'Helvetica Neue', Helvetica, Arial;
+		}
+	/* vdo_background */
+
+
+		video.backgroundvideo {
+			position: fixed; 
+			bottom: -140px; 
+			right: 0;
+			min-width: 100%; 
+			min-height: 100%;
+			width: auto; 
+			height: auto;
+			background: url(demo.png) no-repeat;
+			background-size: cover;
+		}
+		
+    </style>
+</head>
+<body>
+
+	<div class="vdo_area">
+	
+		<video autoplay loop poster="demo.png" class="backgroundvideo">
+			<source src="demo.mp4" type="video/mp4">
+		</video>
+		
+	</div>
+		
+
+	
+	
+
+</body>
+</html>

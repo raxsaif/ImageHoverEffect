@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+        *{margin: 0;padding: 0;}
+ 
+body {
+ background: #E5683B;
+
+   
+}
+ 
+/*TILT*/
+        
+ .pic {
+  border: 10px solid #fff;  
+  float: left;
+  height: 300px;
+  width: 350px;
+   margin: 100px 200px;
+  overflow: hidden;
+   
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}       
+        
+ .tilt:hover  {
+      -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+ 
+}     
+    
+        
+.tilt{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+      -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+    
+}
+ 
+     
+    </style>
+</head>
+<body>
+<div class="tilt pic">
+  <img src="download.jpg" alt="car">
+</div>
+</body>
+</html>
